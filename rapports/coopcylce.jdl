@@ -1,0 +1,77 @@
+
+entity Zones {
+	ville String required minlength(10) maxlength(255),
+    metropole String,
+    communaute String
+}
+
+entity Cooperatives {
+	nom String required minlength(10) maxlength(255)
+}
+
+entity Livreurs {
+	nom String required minlength(10) maxlength(255),
+	prenom String required minlength(10) maxlength(255),
+	city String required minlength(10) maxlength(255)
+}
+
+entity Restaurateurs {
+	nom String required minlength(10) maxlength(255),
+    prenom String required minlength(10) maxlength(255),
+    city String,
+}
+
+entity Restaurants {
+	nom String required minlength(10) maxlength(255),
+	carte String required,
+	menu String
+}
+
+entity Clients {
+	nom String required minlength(10) maxlength(255),
+	prenom String required minlength(10) maxlength(255),
+	email String,
+	phoneNumber String required minlength(10) maxlength(255),
+}
+
+entity Commandes {
+	id String,
+    estPret Boolean,
+    estPaye Boolean
+}
+
+relationship OneToOne {
+	/*clients (1..1) ------ < notifie------ (1..1) restaurateurs*/
+    Clients { restaurateur } to Restaurateurs { client },
+    
+    /*livreurs (1..1) ------ < notifie------ (1..1) restaurateurs*/
+    Livreurs { restaurateur } to Restaurateurs { livreur },
+}
+
+relationship ManyToMany {
+	/*clients (1..1) ------ crée > ------ (1..*) commandes (1..*) ------ destiné à > ------ (1..*) restaurants */
+	Commandes { restaurant } to Restaurants { commande }
+}
+
+relationship OneToMany {
+	/* zones (1..1) ------ < opère ------ (1..*) cooperatives*/
+	Zones to Cooperatives { zone },
+    
+    /* restaurateurs (1..1) ------ est propriétaire > ------ (1..*) restaurants */
+	Restaurateurs to Restaurants { restaurateur },
+}
+
+relationship ManyToOne {
+    
+    /* livreurs (1..*) ------ < est composé de ------ (1..1) coopératives */
+    Livreurs { cooperative } to Cooperatives,
+    
+    /* restaurateurs (1..*) ------ < est composé de ------ (1..1) coopératives */
+    Restaurateurs { cooperative } to Cooperatives,
+    
+    /* clients (1..1) ------ crée > ------ (1..*) commandes */
+    Commandes { client } to Clients { commande }
+}
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
