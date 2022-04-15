@@ -314,14 +314,6 @@
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
 
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
-	<dependency>
-    		<groupId>org.apache.maven.plugins</groupId>
-    		<artifactId>maven-failsafe-plugin</artifactId>
-    		<version>3.0.0-M5</version>
-    		<scope>test</scope>
-	</dependency>
-
     </dependencies>
 
     <build>
