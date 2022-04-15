@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415073536",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "clients",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Clients",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "restaurateurs",
+      "otherEntityRelationshipName": "client",
+      "ownerSide": true,
+      "relationshipName": "restaurateur",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "commandes",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "commande",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

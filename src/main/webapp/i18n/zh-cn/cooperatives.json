@@ -1,0 +1,25 @@
+{
+  "coopcycleJhipsterApp": {
+    "cooperatives": {
+      "home": {
+        "title": "Cooperatives",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Cooperatives",
+        "createOrEditLabel": "创建或编辑 Cooperatives",
+        "notFound": "No Cooperatives found"
+      },
+      "created": "Cooperatives {{ param }} 创建成功",
+      "updated": "Cooperatives {{ param }} 更新成功",
+      "deleted": "Cooperatives {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Cooperatives {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Cooperatives"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "zone": "Zone"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "coopcycleJhipsterApp": {
+    "cooperatives": {
+      "home": {
+        "title": "Cooperatives",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Cooperatives erstellen",
+        "createOrEditLabel": "Cooperatives erstellen oder bearbeiten",
+        "notFound": "Keine Cooperatives gefunden"
+      },
+      "created": "Cooperatives erstellt mit ID {{ param }}",
+      "updated": "Cooperatives aktualisiert mit ID {{ param }}",
+      "deleted": "Cooperatives gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Cooperatives {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Cooperatives"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "zone": "Zone"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "coopcycleJhipsterApp": {
+    "commandes": {
+      "home": {
+        "title": "Commandes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Commandes",
+        "createOrEditLabel": "Genera o modifica un Commandes",
+        "notFound": "No Commandes found"
+      },
+      "created": "&Egrave; stato generato un nuovo Commandes con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Commandes identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Commandes con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Commandes {{ id }}?"
+      },
+      "detail": {
+        "title": "Commandes"
+      },
+      "id": "Id",
+      "estPret": "Est Pret",
+      "estPaye": "Est Paye",
+      "client": "Client",
+      "restaurant": "Restaurant"
+    }
+  }
+}

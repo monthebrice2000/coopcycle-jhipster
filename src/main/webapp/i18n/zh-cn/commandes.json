@@ -1,0 +1,27 @@
+{
+  "coopcycleJhipsterApp": {
+    "commandes": {
+      "home": {
+        "title": "Commandes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Commandes",
+        "createOrEditLabel": "创建或编辑 Commandes",
+        "notFound": "No Commandes found"
+      },
+      "created": "Commandes {{ param }} 创建成功",
+      "updated": "Commandes {{ param }} 更新成功",
+      "deleted": "Commandes {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Commandes {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Commandes"
+      },
+      "id": "Id",
+      "estPret": "Est Pret",
+      "estPaye": "Est Paye",
+      "client": "Client",
+      "restaurant": "Restaurant"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415073534",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "restaurateurs",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Restaurateurs",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "restaurants",
+      "otherEntityRelationshipName": "restaurateur",
+      "relationshipName": "restaurants",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cooperatives",
+      "otherEntityRelationshipName": "restaurateurs",
+      "relationshipName": "cooperative",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "clients",
+      "otherEntityRelationshipName": "restaurateur",
+      "ownerSide": false,
+      "relationshipName": "client",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "livreurs",
+      "otherEntityRelationshipName": "restaurateur",
+      "ownerSide": false,
+      "relationshipName": "livreur",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

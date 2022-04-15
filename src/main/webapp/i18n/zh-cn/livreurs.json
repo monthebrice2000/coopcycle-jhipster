@@ -1,0 +1,28 @@
+{
+  "coopcycleJhipsterApp": {
+    "livreurs": {
+      "home": {
+        "title": "Livreurs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Livreurs",
+        "createOrEditLabel": "创建或编辑 Livreurs",
+        "notFound": "No Livreurs found"
+      },
+      "created": "Livreurs {{ param }} 创建成功",
+      "updated": "Livreurs {{ param }} 更新成功",
+      "deleted": "Livreurs {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Livreurs {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Livreurs"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "city": "City",
+      "restaurateur": "Restaurateur",
+      "cooperative": "Cooperative"
+    }
+  }
+}

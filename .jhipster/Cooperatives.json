@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415073532",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "cooperatives",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cooperatives",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "zones",
+      "otherEntityRelationshipName": "cooperatives",
+      "relationshipName": "zone",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,27 @@
+{
+  "coopcycleJhipsterApp": {
+    "zones": {
+      "home": {
+        "title": "Zones",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Zones",
+        "createOrEditLabel": "创建或编辑 Zones",
+        "notFound": "No Zones found"
+      },
+      "created": "Zones {{ param }} 创建成功",
+      "updated": "Zones {{ param }} 更新成功",
+      "deleted": "Zones {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Zones {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Zones"
+      },
+      "id": "ID",
+      "ville": "Ville",
+      "metropole": "Metropole",
+      "communaute": "Communaute",
+      "cooperatives": "Cooperatives"
+    }
+  }
+}

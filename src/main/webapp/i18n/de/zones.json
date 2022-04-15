@@ -1,0 +1,27 @@
+{
+  "coopcycleJhipsterApp": {
+    "zones": {
+      "home": {
+        "title": "Zones",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Zones erstellen",
+        "createOrEditLabel": "Zones erstellen oder bearbeiten",
+        "notFound": "Keine Zones gefunden"
+      },
+      "created": "Zones erstellt mit ID {{ param }}",
+      "updated": "Zones aktualisiert mit ID {{ param }}",
+      "deleted": "Zones gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Zones {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Zones"
+      },
+      "id": "ID",
+      "ville": "Ville",
+      "metropole": "Metropole",
+      "communaute": "Communaute",
+      "cooperatives": "Cooperatives"
+    }
+  }
+}

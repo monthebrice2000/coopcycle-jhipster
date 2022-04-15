@@ -1,0 +1,28 @@
+{
+  "coopcycleJhipsterApp": {
+    "restaurants": {
+      "home": {
+        "title": "Restaurants",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Restaurants",
+        "createOrEditLabel": "Genera o modifica un Restaurants",
+        "notFound": "No Restaurants found"
+      },
+      "created": "&Egrave; stato generato un nuovo Restaurants con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Restaurants identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Restaurants con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Restaurants {{ id }}?"
+      },
+      "detail": {
+        "title": "Restaurants"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "carte": "Carte",
+      "menu": "Menu",
+      "restaurateur": "Restaurateur",
+      "commande": "Commande"
+    }
+  }
+}

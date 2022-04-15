@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415073535",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "restaurants",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "carte",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "menu",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Restaurants",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "restaurateurs",
+      "otherEntityRelationshipName": "restaurants",
+      "relationshipName": "restaurateur",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "commandes",
+      "otherEntityRelationshipName": "restaurant",
+      "ownerSide": false,
+      "relationshipName": "commande",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,28 @@
+{
+  "coopcycleJhipsterApp": {
+    "restaurants": {
+      "home": {
+        "title": "Restaurants",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Restaurants erstellen",
+        "createOrEditLabel": "Restaurants erstellen oder bearbeiten",
+        "notFound": "Keine Restaurants gefunden"
+      },
+      "created": "Restaurants erstellt mit ID {{ param }}",
+      "updated": "Restaurants aktualisiert mit ID {{ param }}",
+      "deleted": "Restaurants gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Restaurants {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Restaurants"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "carte": "Carte",
+      "menu": "Menu",
+      "restaurateur": "Restaurateur",
+      "commande": "Commande"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "coopcycleJhipsterApp": {
+    "restaurateurs": {
+      "home": {
+        "title": "Restaurateurs",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Restaurateurs erstellen",
+        "createOrEditLabel": "Restaurateurs erstellen oder bearbeiten",
+        "notFound": "Keine Restaurateurs gefunden"
+      },
+      "created": "Restaurateurs erstellt mit ID {{ param }}",
+      "updated": "Restaurateurs aktualisiert mit ID {{ param }}",
+      "deleted": "Restaurateurs gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Restaurateurs {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Restaurateurs"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "city": "City",
+      "restaurants": "Restaurants",
+      "cooperative": "Cooperative",
+      "client": "Client",
+      "livreur": "Livreur"
+    }
+  }
+}
